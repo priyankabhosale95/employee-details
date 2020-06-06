@@ -1,0 +1,23 @@
+<p>qualification-list works!</p>
+
+
+<table border="1">
+
+    <thead>
+      <tr>
+        <th>Qualification ID </th>
+        <th>Qualification Name</th>
+        <th>Qualification University </th>
+        <th>Passing Date</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let qual of qualifications">
+          <td>{{ qual.qid }}</td>
+          <td>{{ qual.qname }}</td>
+          <td>{{ qual.university }}</td>
+          <td>{{ qual.passing_date }}</td>
+      </tr>
+    </tbody>
+  
+</table>

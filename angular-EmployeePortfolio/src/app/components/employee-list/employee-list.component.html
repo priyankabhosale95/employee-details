@@ -1,0 +1,30 @@
+<p>employee-list works!</p>
+
+
+<table border="1">
+
+    <thead>
+      <tr>
+        <th></th>
+        <th>Employee ID </th>
+        <th>Employee Name</th>
+        <th>Employee Gender </th>
+        <th>Employee Role</th>
+        <th>Employeee Date of Birth</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let emp of employees">
+          <td>
+              <img [src]="emp.imageUrl" height="50"/>
+          </td>
+          <td>{{ emp.id }}</td>
+          <td>{{ emp.name }}</td>
+          <td>{{ emp.gender }}</td>
+          <td>{{ emp.role }}</td>
+          <td>{{ emp.dateOfBirth }}</td>
+      </tr>
+    </tbody>
+  
+</table>
+
